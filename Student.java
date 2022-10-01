@@ -1,24 +1,22 @@
 
-package p2;
-
-import java.util.Scanner;
-
+package p1;
 public class Student
 {
     int regno;
     String name;
-    Scanner sc=new Scanner(System.in);
-    public void readstudent()
+    public Student()
     {
-        System.out.println("Enter student name");
-        name= sc.next();
-        System.out.println("Enter the register number");
-        regno= sc.nextInt();
-
+        regno=0;
+        name=null;
+    }
+    public Student(int regno,String name)
+    {
+        this.regno=regno;
+        this.name=name;
     }
     public void showstudent()
     {
-        System.out.println("Student in package p2");
+        System.out.println("\nStudent in package p1");
         System.out.println("Name   :"+name);
         System.out.println("Reg No :"+regno);
     }
