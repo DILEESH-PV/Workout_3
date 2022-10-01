@@ -1,22 +1,24 @@
-package p1;
+package p2;
+
+import java.util.Scanner;
+
 public class Faculty
 {
-    int fid;
+    int facid;
     String name;
-    public Faculty()
+    Scanner sc=new Scanner(System.in);
+    public void readfaculty()
     {
-        fid=0;
-        name=null;
-    }
-    public Faculty(int facultyID,String name)
-    {
-        this.fid=facultyID;
-        this.name=name;
+        System.out.println("Enter faculty name");
+        name= sc.next();
+        System.out.println("Enter the faculty id");
+        facid= sc.nextInt();
+
     }
     public void showfaculty()
     {
-        System.out.println("Faculty in package p1");
+        System.out.println("faculty in package p2");
         System.out.println("Name       :"+name);
-        System.out.println("Faculty ID :"+fid);
+        System.out.println("Faculty ID :"+facid);
     }
 }
